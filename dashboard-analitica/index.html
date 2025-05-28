@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard de Analítica Web</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/icono-dashboard.svg" type="image/svg+xml" />
+</head>
+<body>
+  <header>
+    <h1>📊 Dashboard de Analítica Web</h1>
+  </header>
+  <main>
+    <section class="stats">
+      <div class="card">
+        <h2>Visitas Hoy</h2>
+        <p id="visitasHoy">0</p>
+      </div>
+      <div class="card">
+        <h2>Usuarios Activos</h2>
+        <p id="usuariosActivos">0</p>
+      </div>
+    </section>
+
+    <section class="charts">
+      <div class="chart-container">
+        <h3>Visitas por Día</h3>
+        <canvas id="visitasChart"></canvas>
+      </div>
+      <div class="chart-container">
+        <h3>Navegadores</h3>
+        <canvas id="navegadoresChart"></canvas>
+      </div>
+      <div class="chart-container">
+        <h3>Ubicación por País</h3>
+        <canvas id="paisesChart"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
